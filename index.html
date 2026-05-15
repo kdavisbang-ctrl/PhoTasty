@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Phở Tasty — Authentic Vietnamese Phở in Castleton, Indianapolis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Phở Tasty serves authentic Vietnamese phở, bánh mì, bún and boba on East 82nd Street in Indianapolis. Twelve-hour broth, family recipes, open six days a week." />
+  <meta name="theme-color" content="#1a0e0a" />
+  <meta name="format-detection" content="telephone=yes" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="restaurant.restaurant" />
+  <meta property="og:title" content="Phở Tasty — Authentic Vietnamese in Indianapolis" />
+  <meta property="og:description" content="Twelve-hour broth, family recipes, and a small kitchen on East 82nd Street. Phở · Bánh Mì · Bún · Boba." />
+  <meta property="og:image" content="assets/images/photo-1.jpg" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Phở Tasty — Authentic Vietnamese in Indianapolis" />
+  <meta name="twitter:description" content="Twelve-hour broth, family recipes, and a small kitchen on East 82nd Street." />
+  <meta name="twitter:image" content="assets/images/photo-1.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/images/favicon.svg" />
+  <link rel="canonical" href="./" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="assets/images/photo-1.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Phở Tasty",
+    "servesCuisine": "Vietnamese",
+    "priceRange": "$$",
+    "telephone": "+1-317-436-7071",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "6044 East 82nd Street",
+      "addressLocality": "Indianapolis",
+      "addressRegion": "IN",
+      "postalCode": "46250",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "11:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "11:00",
+        "closes": "20:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "1000"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- ──────────────────── INTRO (alley scene) ──────────────────── -->
+<div class="stage" id="stage" data-screen-label="01 Intro">
+  <div class="scene-wrap">
+    <div class="layer-sky"></div>
+    <div class="layer-mist-far"></div>
+
+    <div class="layer-walls">
+      <div class="wall wall-left"></div>
+      <div class="wall wall-right"></div>
+      <div class="wall-windows">
+        <div class="w w1"></div>
+        <div class="w w2"></div>
+        <div class="w w3"></div>
+        <div class="w w4"></div>
+        <div class="w w5"></div>
+        <div class="w w6"></div>
+      </div>
+    </div>
+
+    <div class="stall">
+      <div class="glow"></div>
+      <div class="roof"></div>
+      <div class="body"></div>
+      <div class="sign">Phở Tasty</div>
+    </div>
+
+    <div class="steam">
+      <span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="bloom"></div>
+    <div class="lanterns"></div>
+    <div class="layer-mist-near"></div>
+    <div class="ground"></div>
+    <div class="particles" id="particles"></div>
+    <div class="vignette"></div>
+    <div class="grain"></div>
+  </div>
+
+  <div class="ui">
+    <div class="panel">
+      <div class="frame-top"></div>
+      <p class="eyebrow">East 82nd · Indianapolis</p>
+      <h1 class="brand">Phở Tasty</h1>
+      <p class="tagline">Bones <span class="dot">✦</span> Anise <span class="dot">✦</span> Steam</p>
+      <button class="enter" id="enterBtn" type="button" aria-label="Enter the site">Enter</button>
+      <div class="frame-bot"></div>
+    </div>
+
+    <div class="caption">An alley · before the city wakes</div>
+    <button class="skip" id="skipBtn" type="button" aria-label="Skip intro animation">Skip Intro <span class="arrow" aria-hidden="true">→</span></button>
+  </div>
+</div>
+
+<!-- ──────────────────── MAIN MENU PAGE ──────────────────── -->
+<main class="menu" id="menu" data-screen-label="02 Menu">
+  <div class="grain"></div>
+  <div class="menu-inner">
+
+    <header class="menu-top">
+      <div class="menu-logo">Phở Tasty</div>
+      <nav class="menu-nav" aria-label="Primary">
+        <a href="#menu"   class="js-show-menu"   data-target="menu">Menu</a>
+        <a href="#story"  class="js-show-story"  data-target="story">Story</a>
+        <a href="#photos" class="js-show-photos" data-target="photos">Photos</a>
+        <a href="#visit"  class="js-show-visit"  data-target="visit">Visit</a>
+      </nav>
+      <button class="menu-back js-back" type="button">← Return to the Alley</button>
+    </header>
+
+    <section class="menu-grid" aria-label="Menu categories">
+      <div class="menu-grid-hero">
+        <span class="eyebrow">— Thực Đơn —</span>
+        <h2>The Menu</h2>
+        <p>Choose what you're hungry for. Tap any plate to see the bowls.</p>
+      </div>
+
+      <div class="cat-grid">
+        <article class="cat-card wide" data-cat="pho" tabindex="0">
+          <img src="assets/images/photo-1.jpg" alt="Phở Tái" loading="lazy" />
+          <div class="cat-card-content">
+            <span class="cat-num">— No. 01 —</span>
+            <div>
+              <h3>Phở</h3>
+              <span class="cat-en">Beef Noodle Soups</span>
+              <div class="cat-meta">
+                <span class="cat-count">12 Bowls</span>
+                <span class="cat-arrow">View →</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="cat-card" data-cat="apps" tabindex="0">
+          <img src="assets/images/photo-10.jpg" alt="Bánh Khọt — mini savory pancakes" loading="lazy" />
+          <div class="cat-card-content">
+            <span class="cat-num">— No. 02 —</span>
+            <div>
+              <h3>Khai Vị</h3>
+              <span class="cat-en">Appetizers</span>
+              <div class="cat-meta">
+                <span class="cat-count">6 Plates</span>
+                <span class="cat-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="cat-card" data-cat="banhmi" tabindex="0">
+          <img src="assets/images/photo-3.jpg" alt="Bánh mì sandwich" loading="lazy" />
+          <div class="cat-card-content">
+            <span class="cat-num">— No. 03 —</span>
+            <div>
+              <h3>Bánh Mì</h3>
+              <span class="cat-en">Sandwiches · $7.50</span>
+              <div class="cat-meta">
+                <span class="cat-count">6 Options</span>
+                <span class="cat-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="cat-card" data-cat="vermicelli" tabindex="0">
+          <img src="assets/images/photo-4.jpg" alt="Bún bowl with grilled beef and eggrolls" loading="lazy" />
+          <div class="cat-card-content">
+            <span class="cat-num">— No. 04 —</span>
+            <div>
+              <h3>Bún</h3>
+              <span class="cat-en">Vermicelli Bowls</span>
+              <div class="cat-meta">
+                <span class="cat-count">7 Bowls</span>
+                <span class="cat-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="cat-card" data-cat="noodles" tabindex="0">
+          <img src="assets/images/photo-5.jpg" alt="Phở chay — vegetable phở" loading="lazy" />
+          <div class="cat-card-content">
+            <span class="cat-num">— No. 05 —</span>
+            <div>
+              <h3>Mì &amp; Hủ Tiếu</h3>
+              <span class="cat-en">Egg &amp; Pork-Broth Noodles</span>
+              <div class="cat-meta">
+                <span class="cat-count">5 Dishes</span>
+                <span class="cat-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="cat-card" data-cat="rice" tabindex="0">
+          <img src="assets/images/photo-7.jpg" alt="Grilled porkchop over rice" loading="lazy" />
+          <div class="cat-card-content">
+            <span class="cat-num">— No. 06 —</span>
+            <div>
+              <h3>Cơm</h3>
+              <span class="cat-en">Steamed &amp; Fried Rice</span>
+              <div class="cat-meta">
+                <span class="cat-count">12 Plates</span>
+                <span class="cat-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="cat-card wide" data-cat="drinks" tabindex="0">
+          <img src="assets/images/photo-2.jpg" alt="Two boba teas" loading="lazy" />
+          <div class="cat-card-content">
+            <span class="cat-num">— No. 07 —</span>
+            <div>
+              <h3>Thức Uống</h3>
+              <span class="cat-en">Drinks · Boba · Dessert</span>
+              <div class="cat-meta">
+                <span class="cat-count">10+ Drinks</span>
+                <span class="cat-arrow">View →</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="menu-breadcrumb" aria-label="breadcrumb">
+      <button class="crumb-back js-back-to-grid" type="button">← All Menus</button>
+      <span class="crumb-sep">·</span>
+      <span class="crumb-current"></span>
+    </div>
+
+    <!-- PHỞ -->
+    <section id="pho" class="section section-pho">
+      <div class="pho-steam"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="section-head">
+        <span class="section-num">— No. 01 —</span>
+        <h2 class="section-title">Phở</h2>
+        <span class="section-en">Beef Noodle Soups</span>
+        <p class="section-kicker">Bones simmered overnight. Star anise, charred ginger, a whisper of cinnamon. Open before the lanterns are out.</p>
+        <p class="section-note">All bowls topped with cilantro &amp; onion · served with beansprouts, lime, jalapeño &amp; Thai basil.</p>
+        <div class="section-divider">✦</div>
+      </div>
+
+      <div class="dish-grid">
+        <article class="dish">
+          <span class="dish-num">30</span>
+          <div>
+            <h3 class="dish-name">Super Bowl Phở</h3>
+            <p class="dish-desc">Brisket, tendon, steak, meatball, ox tail. Large bowl.</p>
+          </div>
+          <span class="dish-price">$21.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">31</span>
+          <div>
+            <h3 class="dish-name">House Special Phở</h3>
+            <p class="dish-desc">Brisket, tripe, tendon, steak, meatball.</p>
+          </div>
+          <span class="dish-price">$14.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">32</span>
+          <div>
+            <h3 class="dish-name">Phở Tái</h3>
+            <p class="dish-desc">Sliced steak — rare or well done.</p>
+          </div>
+          <span class="dish-price">$11.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">33</span>
+          <div>
+            <h3 class="dish-name">Phở Tái Bò Viên</h3>
+            <p class="dish-desc">Sliced steak and meatballs.</p>
+          </div>
+          <span class="dish-price">$12.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">34</span>
+          <div>
+            <h3 class="dish-name">Phở Tái Gân</h3>
+            <p class="dish-desc">Sliced beef and tendon.</p>
+          </div>
+          <span class="dish-price">$12.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">35</span>
+          <div>
+            <h3 class="dish-name">Phở Tái Nạm</h3>
+            <p class="dish-desc">Sliced steak and brisket.</p>
+          </div>
+          <span class="dish-price">$12.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">36</span>
+          <div>
+            <h3 class="dish-name">Phở Tôm</h3>
+            <p class="dish-desc">Shrimp.</p>
+          </div>
+          <span class="dish-price">$12.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">37</span>
+          <div>
+            <h3 class="dish-name">Phở Sườn Bò</h3>
+            <p class="dish-desc">Beef rib. Large bowl.</p>
+          </div>
+          <span class="dish-price">$21.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">38</span>
+          <div>
+            <h3 class="dish-name">Phở Kim Chi</h3>
+            <p class="dish-desc">Spicy kim chi broth · choice of beef or seafood.</p>
+          </div>
+          <span class="dish-price">$14 / $15</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">39</span>
+          <div>
+            <h3 class="dish-name">Phở Đuôi Bò</h3>
+            <p class="dish-desc">Ox tail.</p>
+          </div>
+          <span class="dish-price">$17.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">40</span>
+          <div>
+            <h3 class="dish-name">Phở Gà</h3>
+            <p class="dish-desc">Strips of chicken.</p>
+          </div>
+          <span class="dish-price">$11.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">41</span>
+          <div>
+            <h3 class="dish-name">Phở Rau Cải</h3>
+            <p class="dish-desc">Vegetables and fried tofu. Vegan — ask for vegetable broth.</p>
+          </div>
+          <span class="dish-price">$11.50</span>
+        </article>
+      </div>
+
+      <div class="extras">
+        <strong>Add-ons</strong>
+        <span>Noodle $3</span><span>·</span>
+        <span>Noodle &amp; Soup $6</span><span>·</span>
+        <span>Vegetables $3</span><span>·</span>
+        <span>Rice $3</span><span>·</span>
+        <span>Meat $4</span><span>·</span>
+        <span>Oxtail $9</span><span>·</span>
+        <span>Flank Steak $8</span><span>·</span>
+        <span>Porkchop $6</span>
+      </div>
+    </section>
+
+    <!-- APPETIZERS -->
+    <section id="apps" class="section">
+      <div class="section-head">
+        <span class="section-num">— No. 02 —</span>
+        <h2 class="section-title">Khai Vị</h2>
+        <span class="section-en">Appetizers · 2 pieces unless noted</span>
+      </div>
+
+      <div class="dish-grid">
+        <article class="dish">
+          <span class="dish-num">·</span>
+          <div>
+            <h3 class="dish-name">Soft Spring Rolls</h3>
+            <span class="dish-vi">Gỏi Cuốn</span>
+            <p class="dish-desc">Fresh garden rolls with shrimp and pork (or tofu), peanut sauce.</p>
+          </div>
+          <span class="dish-price">$5.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">·</span>
+          <div>
+            <h3 class="dish-name">Egg Rolls</h3>
+            <span class="dish-vi">Chả Giò</span>
+            <p class="dish-desc">Crispy fried rolls with pork and vegetables, fish sauce.</p>
+          </div>
+          <span class="dish-price">$5.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">·</span>
+          <div>
+            <h3 class="dish-name">Summer Rolls</h3>
+            <span class="dish-vi">Bò Bía</span>
+            <p class="dish-desc">Carrots, daikon, pork sausage and egg, peanut sauce.</p>
+          </div>
+          <span class="dish-price">$5.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">·</span>
+          <div>
+            <h3 class="dish-name">BBQ Pork Rolls</h3>
+            <span class="dish-vi">Nem Cuốn</span>
+            <p class="dish-desc">Vietnamese BBQ pork with lettuce, peanut sauce.</p>
+          </div>
+          <span class="dish-price">$6.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">·</span>
+          <div>
+            <h3 class="dish-name">Vietnamese Pancake</h3>
+            <span class="dish-vi">Bánh Xèo</span>
+            <p class="dish-desc">Large crispy pancake with shrimp, pork, onions, beansprouts, fish sauce.</p>
+          </div>
+          <span class="dish-price">$13.50</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">·</span>
+          <div>
+            <h3 class="dish-name">Mini Pancakes <span style="font-style:italic;font-weight:300;color:var(--cream-dim);font-size:.85em">(7)</span></h3>
+            <span class="dish-vi">Bánh Khọt</span>
+            <p class="dish-desc">Miniature crispy pancakes with shrimp, pork and onions, fish sauce.</p>
+          </div>
+          <span class="dish-price">$13</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- BÁNH MÌ -->
+    <section id="banhmi" class="section">
+      <div class="section-head">
+        <span class="section-num">— No. 03 —</span>
+        <h2 class="section-title">Bánh Mì</h2>
+        <span class="section-en">Sandwiches · all $7.50</span>
+        <p class="section-kicker">Cucumber, cilantro, jalapeño, fried onion, mayo, pickled carrot &amp; radish on a crackling baguette.</p>
+      </div>
+
+      <div class="banhmi-grid">
+        <article class="banhmi">
+          <span class="banhmi-num">1</span>
+          <div>
+            <div class="banhmi-name">Special <span class="vi">Đặc Biệt</span></div>
+            <p class="banhmi-desc">Vietnamese ham, BBQ pork belly &amp; sausage.</p>
+          </div>
+        </article>
+
+        <article class="banhmi">
+          <span class="banhmi-num">2</span>
+          <div>
+            <div class="banhmi-name">Pork <span class="vi">Heo</span></div>
+            <p class="banhmi-desc">Pan-fried pork.</p>
+          </div>
+        </article>
+
+        <article class="banhmi">
+          <span class="banhmi-num">3</span>
+          <div>
+            <div class="banhmi-name">Chicken <span class="vi">Gà</span></div>
+            <p class="banhmi-desc">Pan-fried chicken.</p>
+          </div>
+        </article>
+
+        <article class="banhmi">
+          <span class="banhmi-num">4</span>
+          <div>
+            <div class="banhmi-name">Beef <span class="vi">Bò</span></div>
+            <p class="banhmi-desc">Pan-fried beef.</p>
+          </div>
+        </article>
+
+        <article class="banhmi">
+          <span class="banhmi-num">5</span>
+          <div>
+            <div class="banhmi-name">BBQ Pork <span class="vi">Nem Nướng</span></div>
+            <p class="banhmi-desc">Pan-fried pork loaf.</p>
+          </div>
+        </article>
+
+        <article class="banhmi">
+          <span class="banhmi-num">6</span>
+          <div>
+            <div class="banhmi-name">Vegetarian <span class="vi">Chay</span></div>
+            <p class="banhmi-desc">Fried tofu.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- VERMICELLI / BÚN -->
+    <section id="vermicelli" class="section">
+      <div class="section-head">
+        <span class="section-num">— No. 04 —</span>
+        <h2 class="section-title">Bún</h2>
+        <span class="section-en">Vermicelli noodles</span>
+        <p class="section-note">42–45 served with fish sauce.</p>
+      </div>
+
+      <div class="dish-grid">
+        <article class="dish">
+          <span class="dish-num">42</span>
+          <div>
+            <h3 class="dish-name">Bún Thịt Heo / Bò Nướng Chả Giò</h3>
+            <p class="dish-desc">Pan-fried pork or beef, fresh vegetables, egg rolls.</p>
+          </div>
+          <span class="dish-price">$15 / $16</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">43</span>
+          <div>
+            <h3 class="dish-name">Bún Tôm Thịt Heo Nướng Chả Giò</h3>
+            <p class="dish-desc">Pan-fried pork and shrimp, vegetables, egg rolls.</p>
+          </div>
+          <span class="dish-price">$15.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">44</span>
+          <div>
+            <h3 class="dish-name">Bún Gà / Bò Xào Xả Ớt</h3>
+            <p class="dish-desc">Chicken or beef with lemongrass and chili, fresh vegetables.</p>
+          </div>
+          <span class="dish-price">$14 / $15</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">45</span>
+          <div>
+            <h3 class="dish-name">Bún Thịt Heo Nướng</h3>
+            <p class="dish-desc">Grilled pork, vegetables.</p>
+          </div>
+          <span class="dish-price">$13.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">46</span>
+          <div>
+            <h3 class="dish-name">Bún Cà-Ri Gà / Chay</h3>
+            <p class="dish-desc">Chicken or vegetable curry soup.</p>
+          </div>
+          <span class="dish-price">$14 / $13</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">47</span>
+          <div>
+            <h3 class="dish-name">Bún Bò Huế</h3>
+            <p class="dish-desc">Spicy Huế-style beef noodle soup with shank, brisket, tendon &amp; Vietnamese pork ham.</p>
+          </div>
+          <span class="dish-price">$14.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">48</span>
+          <div>
+            <h3 class="dish-name">Bún Măng Vịt</h3>
+            <p class="dish-desc">Duck soup noodles with bamboo shoot and chopped duck.</p>
+          </div>
+          <span class="dish-price">$14.95</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- NOODLES -->
+    <section id="noodles" class="section">
+      <div class="section-head">
+        <span class="section-num">— No. 05 —</span>
+        <h2 class="section-title">Mì &amp; Hủ Tiếu</h2>
+        <span class="section-en">Egg noodles &amp; pork-broth soups</span>
+      </div>
+
+      <div class="subsection-label">
+        <span>Crispy / Soft Egg Noodles</span>
+      </div>
+      <div class="dish-grid">
+        <article class="dish">
+          <span class="dish-num">25</span>
+          <div>
+            <h3 class="dish-name">Mì Xào Giòn / Mềm</h3>
+            <p class="dish-desc">Crispy or soft egg noodles with pork, shrimp, squid, beef &amp; vegetables.</p>
+          </div>
+          <span class="dish-price">$17.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">26</span>
+          <div>
+            <h3 class="dish-name">Mì Xào Giòn / Mềm Chay</h3>
+            <p class="dish-desc">Crispy or soft egg noodles with tofu, cabbage, broccoli, carrots &amp; onions.</p>
+          </div>
+          <span class="dish-price">$14.95</span>
+        </article>
+      </div>
+
+      <div class="subsection-label">
+        <span>Pork Noodle Soups</span>
+        <span class="small">w/ beansprouts, lettuce, lime &amp; jalapeño</span>
+      </div>
+      <div class="dish-grid">
+        <article class="dish">
+          <span class="dish-num">27</span>
+          <div>
+            <h3 class="dish-name">Hủ Tiếu / Mì Tôm Thịt</h3>
+            <p class="dish-desc">Rice or egg noodle with pork and shrimp in pork broth.</p>
+          </div>
+          <span class="dish-price">$13.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">28</span>
+          <div>
+            <h3 class="dish-name">Hủ Tiếu / Mì Đồ Biển</h3>
+            <p class="dish-desc">Rice or egg noodle with squid and shrimp in pork broth.</p>
+          </div>
+          <span class="dish-price">$14.95</span>
+        </article>
+
+        <article class="dish">
+          <span class="dish-num">29</span>
+          <div>
+            <h3 class="dish-name">Mì Khô</h3>
+            <p class="dish-desc">Dry egg noodle with pork and shrimp, side of pork broth.</p>
+          </div>
+          <span class="dish-price">$13.95</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- RICE -->
+    <section id="rice" class="section">
+      <div class="section-head">
+        <span class="section-num">— No. 06 —</span>
+        <h2 class="section-title">Cơm</h2>
+        <span class="section-en">Rice plates · steamed &amp; fried</span>
+      </div>
+
+      <div class="subsection-label">
+        <span>Steamed Rice</span>
+      </div>
+      <div class="dish-grid">
+        <article class="dish">
+          <span class="dish-num">13</span>
+          <div>
+            <h3 class="dish-name">Cơm Bì Sườn Chả</h3>
+            <p class="dish-desc">Porkchop, fried egg, shredded pork, vegetables, fish sauce.</p>
+          </div>
+          <span class="dish-price">$15.95</span>
+        </article>
+        <article class="dish">
+          <span class="dish-num">14</span>
+          <div>
+            <h3 class="dish-name">Cơm Thịt Heo / Bò Nướng</h3>
+            <p class="dish-desc">Pan-fried pork or beef, vegetables, fish sauce.</p>
+          </div>
+          <span class="dish-price">$15 / $16</span>
+        </article>
+        <article class="dish">
+          <span class="dish-num">15</span>
+          <div>
+            <h3 class="dish-name">Cơm Bò Lúc Lắc</h3>
+            <p class="dish-desc">Tender flank steak in rich house sauce with garlic and onion.</p>
+          </div>
+          <span class="dish-price">$16.95</span>
+        </article>
+        <article class="dish">
+          <span class="dish-num">16</span>
+          <div>
+            <h3 class="dish-name">Cơm Gà / Heo / Bò Xả Ớt</h3>
+            <p class="dish-desc">Chicken, pork or beef with chili flakes &amp; lemongrass.</p>
+          </div>
+          <span class="dish-price">$15 / $15 / $16</span>
+        </article>
+        <article class="dish">
+          <span class="dish-num">17</span>
+          <div>
+            <h3 class="dish-name">Cơm Cà-Ri Gà / Tofu</h3>
+            <p class="dish-desc">Mild chicken or tofu curry with onions and carrots.</p>
+          </div>
+          <span class="dish-price">$15 / $14</span>
+        </article>
+        <article class="dish">
+          <span class="dish-num">18</span>
+          <div>
+            <h3 class="dish-name">Cơm Gà / Bò Xào Rau Cải</h3>
+            <p class="dish-desc">Chicken or beef pan-fried with broccoli, carrots &amp; cabbage in thick sauce.</p>
+          </div>
+          <span class="dish-price">$15 / $16</span>
+        </article>
+      </div>
+
+      <div class="subsection-label">
+        <span>Fried Rice</span>
+      </div>
+      <div class="dish-grid">
+        <article class="dish">
+          <span class="dish-num">19</span>
+          <div>
+            <h3 class="dish-name">House Special Fried Rice</h3>
+            <p class="dish-desc">Shrimp, pork, pork sausage, beef, eggs, onions, carrots &amp; peas.</p>
+          </div>
+          <span class="dish-price">$15.95</span>
+        </article>
+        <article class="dish">
+          <span class="dish-num">20</span>
+          <div>
+            <h3 class="dish-name">Shrimp Fried Rice</h3>
+          </div>
+          <span class="dish-price">$13.95</span>
+        </article>
+        <article class="dish">
+          <span class="dish-num">21</span>
+          <div>
+            <h3 class="dish-name">Beef Fried Rice</h3>
+          </div>
+          <span class="dish-price">$13.95</span>
+        </article>
+        <article class="dish">
+          <span class="dish-num">22</span>
+          <div>
+            <h3 class="dish-name">Chicken Fried Rice</h3>
+          </div>
+          <span class="dish-price">$13.50</span>
+        </article>
+        <article class="dish">
+          <span class="dish-num">23</span>
+          <div>
+            <h3 class="dish-name">Pork Fried Rice</h3>
+          </div>
+          <span class="dish-price">$13.95</span>
+        </article>
+        <article class="dish">
+          <span class="dish-num">24</span>
+          <div>
+            <h3 class="dish-name">Vegetable Fried Rice</h3>
+            <p class="dish-desc">Cabbage, broccoli, onions, peas, carrots &amp; eggs.</p>
+          </div>
+          <span class="dish-price">$11.95</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- DRINKS -->
+    <section id="drinks" class="section">
+      <div class="section-head">
+        <span class="section-num">— No. 07 —</span>
+        <h2 class="section-title">Thức Uống</h2>
+        <span class="section-en">Drinks · dessert · boba</span>
+      </div>
+
+      <div class="drinks-grid">
+        <div class="drink"><span class="drink-name">Vietnamese Iced Coffee <span class="vi">Cà Phê</span></span><span class="drink-price">$5</span></div>
+        <div class="drink"><span class="drink-name">Thai Milk Tea</span><span class="drink-price">$8</span></div>
+        <div class="drink"><span class="drink-name">Passion Fruit Drink</span><span class="drink-price">$8</span></div>
+        <div class="drink"><span class="drink-name">3-Color Dessert <span class="vi">Chè Ba Màu</span></span><span class="drink-price">$5</span></div>
+        <div class="drink"><span class="drink-name">Iced Tamarind <span class="vi">Chè Đá Me</span></span><span class="drink-price">$5</span></div>
+        <div class="drink"><span class="drink-name">Coconut Water</span><span class="drink-price">$5</span></div>
+        <div class="drink"><span class="drink-name">Hot Green Tea</span><span class="drink-price">$3.50</span></div>
+        <div class="drink"><span class="drink-name">Iced Jasmine Tea</span><span class="drink-price">$2.50</span></div>
+        <div class="drink"><span class="drink-name">Soda</span><span class="drink-price">$1.95</span></div>
+        <div class="drink"><span class="drink-name">Boba Tea</span><span class="drink-price">$5</span></div>
+
+        <div class="boba-note">
+          <strong>Boba flavors</strong>
+          Taro · Avocado · Coconut · Green Tea · Mango · Passion Fruit · Milk Tea · Mocha · Lychee · Honeydew · Pandan · Peach.  &nbsp;Toppings +$1.
+        </div>
+      </div>
+    </section>
+
+    <footer class="menu-foot">
+      <button type="button" class="js-back">← Return to the Alley</button>
+      <span class="foot-brand">Phở Tasty</span>
+      <span>Tue – Sat 11 – 9 · Sun 11 – 8</span>
+    </footer>
+
+  </div>
+</main>
+
+<!-- ──────────────────── STORY PAGE ──────────────────── -->
+<section class="story" id="story" data-screen-label="03 Story" aria-label="Our Story">
+  <div class="grain"></div>
+  <div class="story-inner">
+
+    <header class="menu-top">
+      <div class="menu-logo">Phở Tasty</div>
+      <nav class="menu-nav" aria-label="Primary">
+        <a href="#menu"   class="js-show-menu"   data-target="menu">Menu</a>
+        <a href="#story"  class="js-show-story"  data-target="story">Story</a>
+        <a href="#photos" class="js-show-photos" data-target="photos">Photos</a>
+        <a href="#visit"  class="js-show-visit"  data-target="visit">Visit</a>
+      </nav>
+      <button class="menu-back js-back" type="button">← Return to the Alley</button>
+    </header>
+
+    <section class="story-hero">
+      <span class="story-num">— Câu Chuyện —</span>
+      <h1 class="story-title">Our Story</h1>
+      <span class="story-en">A small kitchen on the east side of Indy</span>
+      <p class="story-lede">
+        A bowl of phở is a <em>quiet</em> thing. Slow water, patient bones, hours of waiting. This is the story of one such bowl — and a family who decided that East 82nd Street was as good a place as any to keep it alive.
+      </p>
+    </section>
+
+    <section class="chapter">
+      <div class="chapter-text">
+        <span class="chapter-num">— Chapter I —</span>
+        <h3>Nước Lèo</h3>
+        <span class="chapter-en">The Broth</span>
+        <p>Before the lunch crowd, before the lights come on out front, the bones are already in their slow water. <strong>Marrow, knuckle, oxtail.</strong> Charred ginger and onion held over an open flame until they smoke. A few stars of anise, a cinnamon stick, a whisper of clove.</p>
+        <p>Twelve hours. Sometimes more. We skim and we wait. We taste with a small spoon, add a little salt, a little patience. There are no shortcuts to a real bowl of phở — and if there were, we wouldn't take them.</p>
+      </div>
+      <figure class="chapter-art">
+        <img src="assets/images/photo-5.jpg" alt="Phở Chay — vegetable phở" loading="lazy" />
+        <figcaption class="art-cap">i — broth · 12 hour simmer</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter reverse">
+      <div class="chapter-text">
+        <span class="chapter-num">— Chapter II —</span>
+        <h3>Gia Đình</h3>
+        <span class="chapter-en">The Family</span>
+        <p>The recipes that opened our doors were never written down. They lived in the hands of our mother. The pinch of an aunt's fingers measuring out fish sauce. The way a grandmother knows when the broth is finished without ever looking at a clock.</p>
+        <p>We learned by watching, then by burning a few things, then by being trusted with the stockpot. That is how a recipe survives a journey across an ocean and most of a continent — by being held in someone's hands the whole way.</p>
+      </div>
+      <figure class="chapter-art">
+        <img src="assets/images/photo-10.jpg" alt="Bánh Khọt — mini savory pancakes" loading="lazy" />
+        <figcaption class="art-cap">ii — bánh khọt · the share plate</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter">
+      <div class="chapter-text">
+        <span class="chapter-num">— Chapter III —</span>
+        <h3>Castleton</h3>
+        <span class="chapter-en">Our Corner of Indy</span>
+        <p>We are tucked into a strip mall on East 82nd Street — between a kabob house and a boba shop, half a block from a grocery that smells like cardamom. The neighbors are good neighbors. The parking is honest.</p>
+        <p>Regulars tell us we are <strong>way too good for a strip mall.</strong> We say: a doorway is a doorway. The bowl is what matters.</p>
+      </div>
+      <figure class="chapter-art">
+        <img src="assets/images/photo-3.jpg" alt="Bánh Mì sandwich on red checkered paper" loading="lazy" />
+        <figcaption class="art-cap">iii — 6044 east 82nd · castleton</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter reverse">
+      <div class="chapter-text">
+        <span class="chapter-num">— Chapter IV —</span>
+        <h3>Hôm Nay</h3>
+        <span class="chapter-en">Today</span>
+        <p>We open at eleven. The first bowl belongs to the broth-keeper. The second goes to the regular who doesn't need to order — just nods, sits down, lets us pour. The third has a jar of <strong>house-made chili oil</strong> next to it; we made that ourselves on a slow Tuesday.</p>
+        <p>Walk in cold. Come back warm. There will be phở either way.</p>
+      </div>
+      <figure class="chapter-art">
+        <img src="assets/images/photo-8.jpg" alt="Bún Bò Huế — spicy beef noodle soup" loading="lazy" />
+        <figcaption class="art-cap">iv — bún bò huế · service in progress</figcaption>
+      </figure>
+    </section>
+
+    <section class="pullquote">
+      <blockquote>A bowl of phở is a quiet thing.</blockquote>
+      <div class="pullquote-attr">— House Motto · Phở Tasty</div>
+    </section>
+
+    <section class="visit" id="visit" aria-label="Visit Phở Tasty">
+      <div class="visit-block">
+        <div class="label">Find Us</div>
+        <p class="big">Castleton</p>
+        <p>6044 East 82nd Street<br />Indianapolis, IN 46250</p>
+      </div>
+      <div class="visit-block">
+        <div class="label">Hours</div>
+        <p class="big">Open</p>
+        <p>Tuesday – Saturday · 11 – 9<br />Sunday · 11 – 8<br />Closed Mondays</p>
+      </div>
+      <div class="visit-block">
+        <div class="label">Reach Us</div>
+        <p class="big">Hello</p>
+        <p><a href="tel:+13174367071">(317) 436-7071</a><br />Dine in · take out · delivery</p>
+      </div>
+    </section>
+
+    <footer class="menu-foot">
+      <button type="button" class="js-back">← Return to the Alley</button>
+      <span class="foot-brand">Phở Tasty</span>
+      <span>The best phở in Indy</span>
+    </footer>
+
+  </div>
+</section>
+
+<!-- ──────────────────── PHOTOS & REVIEWS PAGE ──────────────────── -->
+<section class="photos" id="photos" data-screen-label="04 Photos" aria-label="Photos and reviews">
+  <div class="grain"></div>
+  <div class="photos-inner">
+
+    <header class="menu-top">
+      <div class="menu-logo">Phở Tasty</div>
+      <nav class="menu-nav" aria-label="Primary">
+        <a href="#menu"   class="js-show-menu"   data-target="menu">Menu</a>
+        <a href="#story"  class="js-show-story"  data-target="story">Story</a>
+        <a href="#photos" class="js-show-photos" data-target="photos">Photos</a>
+        <a href="#visit"  class="js-show-visit"  data-target="visit">Visit</a>
+      </nav>
+      <button class="menu-back js-back" type="button">← Return to the Alley</button>
+    </header>
+
+    <section class="story-hero">
+      <span class="story-num">— Hình Ảnh —</span>
+      <h1 class="story-title">The Table</h1>
+      <span class="story-en">Photos &amp; Reviews</span>
+      <p class="story-lede">Bowls in their natural habitat — and a few words from the people who eat them.</p>
+    </section>
+
+    <section class="gallery">
+      <figure class="g-item g-feature">
+        <img src="assets/images/photo-1.jpg" alt="Phở Tái — sliced beef phở with bok choy" loading="lazy" />
+        <figcaption>Phở Tái <span class="en">No. 32 · Sliced steak, greens</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="assets/images/photo-4.jpg" alt="Bún bowl with grilled beef and egg rolls" loading="lazy" />
+        <figcaption>Bún Bò Nướng <span class="en">No. 42 · Beef &amp; eggrolls</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="assets/images/photo-7.jpg" alt="Grilled porkchop over rice" loading="lazy" />
+        <figcaption>Cơm Sườn <span class="en">Steamed rice plate</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="assets/images/photo-5.jpg" alt="Phở Chay — vegetable and tofu phở" loading="lazy" />
+        <figcaption>Phở Chay <span class="en">No. 41 · Vegan</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="assets/images/photo-3.jpg" alt="Beef Bánh Mì sandwich on red checkered paper" loading="lazy" />
+        <figcaption>Bánh Mì Bò <span class="en">No. 4 · Beef sandwich</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="assets/images/photo-6.jpg" alt="Shrimp fried rice" loading="lazy" />
+        <figcaption>Cơm Chiên Tôm <span class="en">No. 20 · Shrimp fried rice</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="assets/images/photo-8.jpg" alt="Bún Bò Huế — spicy beef noodle soup" loading="lazy" />
+        <figcaption>Bún Bò Huế <span class="en">No. 47 · Spicy beef</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="assets/images/photo-10.jpg" alt="Bánh Khọt — mini savory pancakes" loading="lazy" />
+        <figcaption>Bánh Khọt <span class="en">Mini pancakes · 7</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="assets/images/photo-2.jpg" alt="Two boba teas" loading="lazy" />
+        <figcaption>Trà Sữa <span class="en">Boba · 12 flavors</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="reviews-head">
+      <span class="story-num">— Lời Khen —</span>
+      <h2>From the Booth</h2>
+      <span class="en">What guests say</span>
+      <div class="reviews-meta">
+        <span><span class="stars-mini">★★★★★</span> &nbsp;<strong>4.5</strong> Google</span>
+        <span class="sep">·</span>
+        <span><strong>4.4</strong> Restaurant Guru</span>
+        <span class="sep">·</span>
+        <span><strong>1,000+</strong> Reviews</span>
+      </div>
+    </section>
+
+    <section class="reviews-grid">
+      <article class="review">
+        <div class="stars" aria-label="5 out of 5 stars">★ ★ ★ ★ ★</div>
+        <blockquote>Way too good for a strip mall. The #33 phở tái with meatballs is genuinely dangerous — we order it weekly.</blockquote>
+        <div class="reviewer">Maya R. · Castleton</div>
+      </article>
+
+      <article class="review">
+        <div class="stars" aria-label="5 out of 5 stars">★ ★ ★ ★ ★</div>
+        <blockquote>Best bánh mì I've had in Indy. The bread comes warm, the balance is exactly right, and the tofu version is a revelation.</blockquote>
+        <div class="reviewer">Eric F. · Geist</div>
+      </article>
+
+      <article class="review">
+        <div class="stars" aria-label="5 out of 5 stars">★ ★ ★ ★ ★</div>
+        <blockquote>We come for the milk tea boba and stay for the phở. The waiter recognizes us now. We're not mad about it.</blockquote>
+        <div class="reviewer">Daniel &amp; Anh · Fishers</div>
+      </article>
+
+      <article class="review">
+        <div class="stars" aria-label="5 out of 5 stars">★ ★ ★ ★ ★</div>
+        <blockquote>Hidden gem off 82nd. The broth has real depth — none of that sweet, watered-down version you find elsewhere.</blockquote>
+        <div class="reviewer">Patrick M. · Lawrence</div>
+      </article>
+
+      <article class="review">
+        <div class="stars" aria-label="5 out of 5 stars">★ ★ ★ ★ ★</div>
+        <blockquote>First time eating phở. The chef walked me through the sauces, suggested the kim chi bowl. Left feeling like a guest, not a customer.</blockquote>
+        <div class="reviewer">Kim P. · Indianapolis</div>
+      </article>
+
+      <article class="review">
+        <div class="stars" aria-label="5 out of 5 stars">★ ★ ★ ★ ★</div>
+        <blockquote>The house-made chili oil is a religious experience. Bring tissues, bring an appetite, bring a friend who's never had phở.</blockquote>
+        <div class="reviewer">Theresa T. · Castleton</div>
+      </article>
+    </section>
+
+    <footer class="menu-foot">
+      <button type="button" class="js-back">← Return to the Alley</button>
+      <span class="foot-brand">Phở Tasty</span>
+      <span>6044 E 82nd St · Indy</span>
+    </footer>
+
+  </div>
+</section>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
