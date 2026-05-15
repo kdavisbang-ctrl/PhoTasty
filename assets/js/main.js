@@ -1,11 +1,21 @@
 (function () {
   'use strict';
 
+  // Phone-class viewport — used to budget how many animated nodes we draw.
+  // iOS Safari can crash the intro tab if we render the full desktop count.
+  const isSmallScreen = window.matchMedia('(max-width: 980px)').matches;
+
   // ── Generate lantern rows
   function buildLanterns() {
     const lanterns = document.querySelector('.lanterns');
     if (!lanterns) return;
-    const rows = [
+    const rows = isSmallScreen ? [
+      { cls: 'row-1 lr-far',  n: 7 },
+      { cls: 'row-2 lr-far',  n: 5 },
+      { cls: 'row-3 lr-mid',  n: 4 },
+      { cls: 'row-4 lr-mid',  n: 3 },
+      { cls: 'row-5 lr-near', n: 2 }
+    ] : [
       { cls: 'row-1 lr-far',  n: 11 },
       { cls: 'row-2 lr-far',  n: 9  },
       { cls: 'row-3 lr-mid',  n: 7  },
@@ -30,7 +40,7 @@
   function buildParticles() {
     const root = document.getElementById('particles');
     if (!root) return;
-    const N = 36;
+    const N = isSmallScreen ? 10 : 36;
     for (let i = 0; i < N; i++) {
       const m = document.createElement('div');
       m.className = 'mote';

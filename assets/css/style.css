@@ -1653,6 +1653,41 @@ html, body {
   .review::before { font-size: 64px; left: 12px; }
 }
 
+/* ────────────── Mobile GPU/memory budget ──────────────
+   iOS Safari kills tabs when too many filter+mix-blend-mode layers
+   composite at once. The desktop intro stacks a lot of them. On
+   phone-class widths we cut the expensive ones and keep the look. */
+@media (max-width: 980px) {
+  /* Animated SVG turbulence is the single most expensive layer. Drop it. */
+  .grain { display: none; }
+
+  /* mix-blend-mode is a frequent iOS OOM trigger when animated. */
+  .layer-mist-far,
+  .layer-mist-near,
+  .bloom,
+  .particles { mix-blend-mode: normal; }
+
+  /* Shrink filter:blur radii — each blur is a separate render pass. */
+  .layer-mist-far  { filter: none; opacity: .55; }
+  .layer-mist-near { filter: blur(6px); opacity: .6; }
+  .steam span      { filter: blur(4px); }
+  .pho-steam span  { filter: blur(6px); }
+
+  /* Lantern shadows are the worst offender — 35 lanterns × 270px blur. */
+  .lantern {
+    box-shadow:
+      0 0 calc(var(--lw, 60px) * .8) calc(var(--lw, 60px) * .2) rgba(255,110,50,.45),
+      inset 0 -6px 10px rgba(80,16,12,.6),
+      inset 0 4px 8px rgba(255,200,140,.4);
+  }
+
+  /* backdrop-filter is also expensive on iOS — drop it on small screens. */
+  .panel,
+  .menu-top,
+  .cat-card-content .cat-count,
+  .art-cap { backdrop-filter: none; -webkit-backdrop-filter: none; }
+}
+
 /* Respect reduced-motion preferences */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
