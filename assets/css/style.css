@@ -1041,7 +1041,7 @@ html, body {
 }
 
 /* ────────────── STORY + PHOTOS pages (shared shell) ────────────── */
-.story, .photos {
+.story, .photos, .reviews {
   position: fixed; inset: 0;
   background: radial-gradient(ellipse 70% 50% at 50% -5%, #2a160c 0%, #170a07 50%, #07040a 100%);
   color: var(--cream);
@@ -1054,18 +1054,19 @@ html, body {
   scrollbar-width: thin;
   scrollbar-color: rgba(220,180,120,.3) transparent;
 }
-.story::-webkit-scrollbar, .photos::-webkit-scrollbar { width: 6px; }
-.story::-webkit-scrollbar-thumb, .photos::-webkit-scrollbar-thumb { background: rgba(220,180,120,.3); border-radius: 3px; }
-.story.show, .photos.show { opacity: 1; pointer-events: auto; }
-.story .grain, .photos .grain { position: fixed; inset: -10%; opacity: .07; z-index: 2; pointer-events: none; }
+.story::-webkit-scrollbar, .photos::-webkit-scrollbar, .reviews::-webkit-scrollbar { width: 6px; }
+.story::-webkit-scrollbar-thumb, .photos::-webkit-scrollbar-thumb, .reviews::-webkit-scrollbar-thumb { background: rgba(220,180,120,.3); border-radius: 3px; }
+.story.show, .photos.show, .reviews.show { opacity: 1; pointer-events: auto; }
+.story .grain, .photos .grain, .reviews .grain { position: fixed; inset: -10%; opacity: .07; z-index: 2; pointer-events: none; }
 
-.story-inner, .photos-inner {
+.story-inner, .photos-inner, .reviews-inner {
   position: relative; z-index: 1;
   margin: 0 auto;
   padding: 0 56px 80px;
 }
-.story-inner  { max-width: 1140px; }
-.photos-inner { max-width: 1280px; }
+.story-inner   { max-width: 1140px; }
+.photos-inner  { max-width: 1280px; }
+.reviews-inner { max-width: 1140px; }
 
 .story-hero { padding: 50px 0 60px; text-align: center; }
 .story-hero .story-num {
@@ -1355,7 +1356,7 @@ html, body {
 }
 
 @media (max-width: 980px) {
-  .story-inner, .photos-inner { padding: 0 24px 60px; }
+  .story-inner, .photos-inner, .reviews-inner { padding: 0 24px 60px; }
   .chapter, .chapter.reverse { grid-template-columns: 1fr; gap: 32px; padding: 50px 0; }
   .chapter.reverse .chapter-text { order: 2; }
   .chapter.reverse .chapter-art  { order: 1; }
@@ -1533,7 +1534,7 @@ html, body {
 
 /* ────────────── Phone layout ────────────── */
 @media (max-width: 640px) {
-  .menu-inner, .story-inner, .photos-inner { padding: 0 18px 60px; }
+  .menu-inner, .story-inner, .photos-inner, .reviews-inner { padding: 0 18px 60px; }
 
   .menu-top {
     margin: 0 -18px 32px;

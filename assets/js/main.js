@@ -61,9 +61,10 @@
   const menu     = document.getElementById('menu');
   const story    = document.getElementById('story');
   const photos   = document.getElementById('photos');
+  const reviews  = document.getElementById('reviews');
   const enterBtn = document.getElementById('enterBtn');
   const skipBtn  = document.getElementById('skipBtn');
-  const pages    = { menu: menu, story: story, photos: photos };
+  const pages    = { menu: menu, story: story, photos: photos, reviews: reviews };
 
   const catLabels = {
     pho: 'Phở',
@@ -176,9 +177,10 @@
       if (catLabels[cat]) openCategory(cat);
       return true;
     }
-    if (raw === 'story') { showPage('story'); return true; }
-    if (raw === 'photos') { showPage('photos'); return true; }
-    if (raw === 'visit')  { showPage('story', '#visit'); return true; }
+    if (raw === 'story')   { showPage('story');   return true; }
+    if (raw === 'photos')  { showPage('photos');  return true; }
+    if (raw === 'reviews') { showPage('reviews'); return true; }
+    if (raw === 'visit')   { showPage('story', '#visit'); return true; }
     return false;
   }
 
