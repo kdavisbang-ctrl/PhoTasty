@@ -234,11 +234,23 @@
     if (!routeFromHash()) backToAlley();
   });
 
-  buildLanterns();
-  buildParticles();
-
   // Deep link on initial load — skip intro if user lands on a hash.
-  if (routeFromHash() && stage) {
+  // Done first so we can skip ambient effects entirely on deep-link entry.
+  const deepLinked = routeFromHash();
+  if (deepLinked && stage) {
     stage.style.display = 'none';
+  }
+
+  // Defer ambient effects past first paint to keep LCP/TBT clean.
+  // No need to render lanterns or particles if we deep-linked away from the intro.
+  function ambientInit() {
+    if (deepLinked) return;
+    buildLanterns();
+    buildParticles();
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(ambientInit, { timeout: 600 });
+  } else {
+    setTimeout(ambientInit, 80);
   }
 })();

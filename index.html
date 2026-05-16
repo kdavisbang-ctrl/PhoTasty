@@ -12,13 +12,16 @@
   <meta property="og:type" content="restaurant.restaurant" />
   <meta property="og:title" content="Phở Tasty — Authentic Vietnamese in Indianapolis" />
   <meta property="og:description" content="Twelve-hour broth, family recipes, and a small kitchen on East 82nd Street. Phở · Bánh Mì · Bún · Boba." />
-  <meta property="og:image" content="assets/images/photo-1.jpg" />
+  <meta property="og:image" content="assets/images/photo-1.webp" />
+  <meta property="og:image:type" content="image/webp" />
+  <meta property="og:image:width" content="258" />
+  <meta property="og:image:height" content="336" />
   <meta property="og:locale" content="en_US" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Phở Tasty — Authentic Vietnamese in Indianapolis" />
   <meta name="twitter:description" content="Twelve-hour broth, family recipes, and a small kitchen on East 82nd Street." />
-  <meta name="twitter:image" content="assets/images/photo-1.jpg" />
+  <meta name="twitter:image" content="assets/images/photo-1.webp" />
 
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
   <link rel="apple-touch-icon" href="assets/images/favicon.svg" />
@@ -26,8 +29,13 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="image" href="assets/images/photo-1.jpg" />
-  <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/images/photo-1.webp" fetchpriority="high" />
+
+  <!-- Async-load Google Fonts so they don't block first paint -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Italianno&family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300;1,500&family=Inter:wght@300;400;500;600&display=swap" onload="this.rel='stylesheet';this.onload=null" />
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  </noscript>
 
   <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -151,7 +159,7 @@
 
       <div class="cat-grid">
         <article class="cat-card wide" data-cat="pho" tabindex="0">
-          <img src="assets/images/photo-1.jpg" alt="Phở Tái" loading="lazy" />
+          <img src="assets/images/photo-1.webp" alt="Phở Tái" width="258" height="336" decoding="async" fetchpriority="high" />
           <div class="cat-card-content">
             <span class="cat-num">— No. 01 —</span>
             <div>
@@ -166,7 +174,7 @@
         </article>
 
         <article class="cat-card" data-cat="apps" tabindex="0">
-          <img src="assets/images/photo-10.jpg" alt="Bánh Khọt — mini savory pancakes" loading="lazy" />
+          <img src="assets/images/photo-10.webp" alt="Bánh Khọt — mini savory pancakes" loading="lazy" decoding="async" width="258" height="336" />
           <div class="cat-card-content">
             <span class="cat-num">— No. 02 —</span>
             <div>
@@ -181,7 +189,7 @@
         </article>
 
         <article class="cat-card" data-cat="banhmi" tabindex="0">
-          <img src="assets/images/photo-3.jpg" alt="Bánh mì sandwich" loading="lazy" />
+          <img src="assets/images/photo-3.webp" alt="Bánh mì sandwich" loading="lazy" decoding="async" width="258" height="336" />
           <div class="cat-card-content">
             <span class="cat-num">— No. 03 —</span>
             <div>
@@ -196,7 +204,7 @@
         </article>
 
         <article class="cat-card" data-cat="vermicelli" tabindex="0">
-          <img src="assets/images/photo-4.jpg" alt="Bún bowl with grilled beef and eggrolls" loading="lazy" />
+          <img src="assets/images/photo-4.webp" alt="Bún bowl with grilled beef and eggrolls" loading="lazy" decoding="async" width="258" height="336" />
           <div class="cat-card-content">
             <span class="cat-num">— No. 04 —</span>
             <div>
@@ -211,7 +219,7 @@
         </article>
 
         <article class="cat-card" data-cat="noodles" tabindex="0">
-          <img src="assets/images/photo-5.jpg" alt="Phở chay — vegetable phở" loading="lazy" />
+          <img src="assets/images/photo-5.webp" alt="Phở chay — vegetable phở" loading="lazy" decoding="async" width="258" height="336" />
           <div class="cat-card-content">
             <span class="cat-num">— No. 05 —</span>
             <div>
@@ -226,7 +234,7 @@
         </article>
 
         <article class="cat-card" data-cat="rice" tabindex="0">
-          <img src="assets/images/photo-7.jpg" alt="Grilled porkchop over rice" loading="lazy" />
+          <img src="assets/images/photo-7.webp" alt="Grilled porkchop over rice" loading="lazy" decoding="async" width="258" height="336" />
           <div class="cat-card-content">
             <span class="cat-num">— No. 06 —</span>
             <div>
@@ -241,7 +249,7 @@
         </article>
 
         <article class="cat-card wide" data-cat="drinks" tabindex="0">
-          <img src="assets/images/photo-2.jpg" alt="Two boba teas" loading="lazy" />
+          <img src="assets/images/photo-2.webp" alt="Two boba teas" loading="lazy" decoding="async" width="258" height="336" />
           <div class="cat-card-content">
             <span class="cat-num">— No. 07 —</span>
             <div>
@@ -853,7 +861,7 @@
         <p>Twelve hours. Sometimes more. We skim and we wait. We taste with a small spoon, add a little salt, a little patience. There are no shortcuts to a real bowl of phở — and if there were, we wouldn't take them.</p>
       </div>
       <figure class="chapter-art">
-        <img src="assets/images/photo-5.jpg" alt="Phở Chay — vegetable phở" loading="lazy" />
+        <img src="assets/images/photo-5.webp" alt="Phở Chay — vegetable phở" loading="lazy" decoding="async" width="258" height="336" />
         <figcaption class="art-cap">i — broth · 12 hour simmer</figcaption>
       </figure>
     </section>
@@ -867,7 +875,7 @@
         <p>We learned by watching, then by burning a few things, then by being trusted with the stockpot. That is how a recipe survives a journey across an ocean and most of a continent — by being held in someone's hands the whole way.</p>
       </div>
       <figure class="chapter-art">
-        <img src="assets/images/photo-10.jpg" alt="Bánh Khọt — mini savory pancakes" loading="lazy" />
+        <img src="assets/images/photo-10.webp" alt="Bánh Khọt — mini savory pancakes" loading="lazy" decoding="async" width="258" height="336" />
         <figcaption class="art-cap">ii — bánh khọt · the share plate</figcaption>
       </figure>
     </section>
@@ -881,7 +889,7 @@
         <p>Regulars tell us we are <strong>way too good for a strip mall.</strong> We say: a doorway is a doorway. The bowl is what matters.</p>
       </div>
       <figure class="chapter-art">
-        <img src="assets/images/photo-3.jpg" alt="Bánh Mì sandwich on red checkered paper" loading="lazy" />
+        <img src="assets/images/photo-3.webp" alt="Bánh Mì sandwich on red checkered paper" loading="lazy" decoding="async" width="258" height="336" />
         <figcaption class="art-cap">iii — 6044 east 82nd · castleton</figcaption>
       </figure>
     </section>
@@ -895,7 +903,7 @@
         <p>Walk in cold. Come back warm. There will be phở either way.</p>
       </div>
       <figure class="chapter-art">
-        <img src="assets/images/photo-8.jpg" alt="Bún Bò Huế — spicy beef noodle soup" loading="lazy" />
+        <img src="assets/images/photo-8.webp" alt="Bún Bò Huế — spicy beef noodle soup" loading="lazy" decoding="async" width="258" height="336" />
         <figcaption class="art-cap">iv — bún bò huế · service in progress</figcaption>
       </figure>
     </section>
@@ -958,39 +966,39 @@
 
     <section class="gallery">
       <figure class="g-item g-feature">
-        <img src="assets/images/photo-1.jpg" alt="Phở Tái — sliced beef phở with bok choy" loading="lazy" />
+        <img src="assets/images/photo-1.webp" alt="Phở Tái — sliced beef phở with bok choy" loading="lazy" decoding="async" width="258" height="336" />
         <figcaption>Phở Tái <span class="en">No. 32 · Sliced steak, greens</span></figcaption>
       </figure>
       <figure class="g-item">
-        <img src="assets/images/photo-4.jpg" alt="Bún bowl with grilled beef and egg rolls" loading="lazy" />
+        <img src="assets/images/photo-4.webp" alt="Bún bowl with grilled beef and egg rolls" loading="lazy" decoding="async" width="258" height="336" />
         <figcaption>Bún Bò Nướng <span class="en">No. 42 · Beef &amp; eggrolls</span></figcaption>
       </figure>
       <figure class="g-item">
-        <img src="assets/images/photo-7.jpg" alt="Grilled porkchop over rice" loading="lazy" />
+        <img src="assets/images/photo-7.webp" alt="Grilled porkchop over rice" loading="lazy" decoding="async" width="258" height="336" />
         <figcaption>Cơm Sườn <span class="en">Steamed rice plate</span></figcaption>
       </figure>
       <figure class="g-item">
-        <img src="assets/images/photo-5.jpg" alt="Phở Chay — vegetable and tofu phở" loading="lazy" />
+        <img src="assets/images/photo-5.webp" alt="Phở Chay — vegetable and tofu phở" loading="lazy" decoding="async" width="258" height="336" />
         <figcaption>Phở Chay <span class="en">No. 41 · Vegan</span></figcaption>
       </figure>
       <figure class="g-item">
-        <img src="assets/images/photo-3.jpg" alt="Beef Bánh Mì sandwich on red checkered paper" loading="lazy" />
+        <img src="assets/images/photo-3.webp" alt="Beef Bánh Mì sandwich on red checkered paper" loading="lazy" decoding="async" width="258" height="336" />
         <figcaption>Bánh Mì Bò <span class="en">No. 4 · Beef sandwich</span></figcaption>
       </figure>
       <figure class="g-item">
-        <img src="assets/images/photo-6.jpg" alt="Shrimp fried rice" loading="lazy" />
+        <img src="assets/images/photo-6.webp" alt="Shrimp fried rice" loading="lazy" decoding="async" width="258" height="336" />
         <figcaption>Cơm Chiên Tôm <span class="en">No. 20 · Shrimp fried rice</span></figcaption>
       </figure>
       <figure class="g-item">
-        <img src="assets/images/photo-8.jpg" alt="Bún Bò Huế — spicy beef noodle soup" loading="lazy" />
+        <img src="assets/images/photo-8.webp" alt="Bún Bò Huế — spicy beef noodle soup" loading="lazy" decoding="async" width="258" height="336" />
         <figcaption>Bún Bò Huế <span class="en">No. 47 · Spicy beef</span></figcaption>
       </figure>
       <figure class="g-item">
-        <img src="assets/images/photo-10.jpg" alt="Bánh Khọt — mini savory pancakes" loading="lazy" />
+        <img src="assets/images/photo-10.webp" alt="Bánh Khọt — mini savory pancakes" loading="lazy" decoding="async" width="258" height="336" />
         <figcaption>Bánh Khọt <span class="en">Mini pancakes · 7</span></figcaption>
       </figure>
       <figure class="g-item">
-        <img src="assets/images/photo-2.jpg" alt="Two boba teas" loading="lazy" />
+        <img src="assets/images/photo-2.webp" alt="Two boba teas" loading="lazy" decoding="async" width="258" height="336" />
         <figcaption>Trà Sữa <span class="en">Boba · 12 flavors</span></figcaption>
       </figure>
     </section>
